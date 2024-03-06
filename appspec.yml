@@ -5,7 +5,7 @@ files:
     destination: /home/ubuntu/github_action
     overwrite: yes
 
-permission:
+permissions:
   - object: /
     pattern: "**"
     owner: ubuntu
