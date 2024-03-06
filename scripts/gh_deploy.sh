@@ -8,6 +8,9 @@ APPLICATION_LOG_PATH="/home/ubuntu/$PROJECT_NAME/application.log"
 BUILD_JAR=$(ls $JAR_PATH)
 JAR_NAME=$(basename $BUILD_JAR)
 
+chmod -x *.log
+chmod -x *.jar
+
 echo "===== 배포 시작 : $(date +%c) =====" >> $DEPLOY_LOG_PATH
 
 echo "> build 파일명: $JAR_NAME" >> $DEPLOY_LOG_PATH
